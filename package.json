@@ -1,0 +1,26 @@
+{
+  "name": "hmac-file-stream",
+  "version": "1.0.0",
+  "description": "Minimalist crypto hmac digest for files (file content)",
+  "homepage": "http://github.com/nyraxle/hmac-file-stream",
+  "author":  {
+    "name": "Eduardo Arnold",
+    "email": "eduardo@radbird.com"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nyraxle/hmac-file-stream.git"
+  },
+  "keywords": [
+    "crypto",
+    "hmac",
+    "streaming",
+    "file",
+    "stream"
+  ],
+  "engines": {
+    "node": "*"
+  }
+}
