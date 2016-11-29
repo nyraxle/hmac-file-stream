@@ -16,14 +16,12 @@ var hmacFile = function (algorithm, secret) {
     });
   };
 
-  var digest = function (encoding) {
+  var _digest = function (encoding) {
     return typeof encoding === 'string'? hmac.digest(encoding) : hmac.digest(encoding);
   };
 
-  this.digest = digest;
-
-  this.digestAsStream = function (encoding) {
-    var hashDigest = digest(encoding);
+  this.digest = function (encoding) {
+    var hashDigest = _digest(encoding);
     var rs = require('stream').Readable();
     rs._read = function () {
         rs.push(hashDigest);
