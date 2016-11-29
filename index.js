@@ -29,7 +29,7 @@ var hmacFile = function (algorithm, secret) {
         rs.push(hashDigest);
         rs.push(null);
     };
-    return rnpms;
+    return rs;
   };
 };
 
