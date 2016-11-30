@@ -1,4 +1,7 @@
 node_modules
 node_modules/*
-npm_debug.log
+logs
+*.log
+npm-debug.log*
+.npm
 .example-file-hmac-stream
